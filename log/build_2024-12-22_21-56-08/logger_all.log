@@ -1,0 +1,535 @@
+[0.204s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.204s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f2f4c55e530>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f2f4c657df0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f2f4c657df0>>, mixin_verb=('build',))
+[0.267s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.268s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kushgarg/Desktop/ros2_ws'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_robot2) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_robot2) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_robot2) by extension 'ignore_ament_install'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_robot2) by extensions ['colcon_pkg']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_robot2) by extension 'colcon_pkg'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_robot2) by extensions ['colcon_meta']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_robot2) by extension 'colcon_meta'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_robot2) by extensions ['ros']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_robot2) by extension 'ros'
+[0.301s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mobile_robot2' with type 'ros.ament_cmake' and name 'mobile_robot2'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'ros'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['cmake', 'python']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'cmake'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'python'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extensions ['python_setup_py']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne) by extension 'python_setup_py'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'colcon_pkg'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['colcon_meta']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'colcon_meta'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extensions ['ros']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne) by extension 'ros'
+[0.304s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne' with type 'ros.ament_cmake' and name 'velodyne'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_driver) by extension 'ros'
+[0.308s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_driver' with type 'ros.ament_cmake' and name 'velodyne_driver'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['ignore', 'ignore_ament_install']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ignore'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extensions ['ros']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_laserscan) by extension 'ros'
+[0.311s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_laserscan' with type 'ros.ament_cmake' and name 'velodyne_laserscan'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_msgs) by extension 'ros'
+[0.314s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_msgs' with type 'ros.ament_cmake' and name 'velodyne_msgs'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/velodyne/velodyne_pointcloud) by extension 'ros'
+[0.319s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velodyne/velodyne_pointcloud' with type 'ros.ament_cmake' and name 'velodyne_pointcloud'
+[0.319s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.368s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.368s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.369s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.370s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.370s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.370s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.370s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.370s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.370s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.370s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kushgarg/Desktop/ros2_ws/install/velodyne_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.371s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/kushgarg/Desktop/ros2_ws/install
+[0.375s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 350 installed packages in /opt/ros/humble
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'mobile_robot2' build argument 'cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'mobile_robot2' build argument 'cmake_target' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'mobile_robot2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'mobile_robot2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'mobile_robot2' build argument 'cmake_clean_first' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'mobile_robot2' build argument 'cmake_force_configure' from command line to 'False'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'mobile_robot2' build argument 'ament_cmake_args' from command line to 'None'
+[0.500s] Level 5:colcon.colcon_core.verb:set package 'mobile_robot2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'mobile_robot2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.501s] DEBUG:colcon.colcon_core.verb:Building package 'mobile_robot2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kushgarg/Desktop/ros2_ws/build/mobile_robot2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2', 'merge_install': False, 'path': '/home/kushgarg/Desktop/ros2_ws/src/mobile_robot2', 'symlink_install': False, 'test_result_base': None}
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_args' from command line to 'None'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_target' from command line to 'None'
+[0.501s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_clean_cache' from command line to 'False'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_clean_first' from command line to 'False'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'cmake_force_configure' from command line to 'False'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'ament_cmake_args' from command line to 'None'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'catkin_cmake_args' from command line to 'None'
+[0.502s] Level 5:colcon.colcon_core.verb:set package 'velodyne_laserscan' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.502s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_laserscan' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan', 'merge_install': False, 'path': '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_laserscan', 'symlink_install': False, 'test_result_base': None}
+[0.503s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_args' from command line to 'None'
+[0.503s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_target' from command line to 'None'
+[0.503s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.503s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.503s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.503s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.503s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.503s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.503s] Level 5:colcon.colcon_core.verb:set package 'velodyne_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.503s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs', 'merge_install': False, 'path': '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_args' from command line to 'None'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_target' from command line to 'None'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.504s] Level 5:colcon.colcon_core.verb:set package 'velodyne_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.504s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kushgarg/Desktop/ros2_ws/build/velodyne_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver', 'merge_install': False, 'path': '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_driver', 'symlink_install': False, 'test_result_base': None}
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_args' from command line to 'None'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_target' from command line to 'None'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_clean_cache' from command line to 'False'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_clean_first' from command line to 'False'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'cmake_force_configure' from command line to 'False'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'ament_cmake_args' from command line to 'None'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'catkin_cmake_args' from command line to 'None'
+[0.505s] Level 5:colcon.colcon_core.verb:set package 'velodyne_pointcloud' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.505s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne_pointcloud' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud', 'merge_install': False, 'path': '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_pointcloud', 'symlink_install': False, 'test_result_base': None}
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_args' from command line to 'None'
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_target' from command line to 'None'
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_clean_cache' from command line to 'False'
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_clean_first' from command line to 'False'
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'cmake_force_configure' from command line to 'False'
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'ament_cmake_args' from command line to 'None'
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'catkin_cmake_args' from command line to 'None'
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'velodyne' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.506s] DEBUG:colcon.colcon_core.verb:Building package 'velodyne' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kushgarg/Desktop/ros2_ws/build/velodyne', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kushgarg/Desktop/ros2_ws/install/velodyne', 'merge_install': False, 'path': '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne', 'symlink_install': False, 'test_result_base': None}
+[0.507s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.508s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.508s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_msgs' with build type 'ament_cmake'
+[0.509s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_msgs'
+[0.511s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.512s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.512s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.517s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_laserscan' with build type 'ament_cmake'
+[0.517s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_laserscan'
+[0.518s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.518s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.522s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kushgarg/Desktop/ros2_ws/src/mobile_robot2' with build type 'ament_cmake'
+[0.523s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kushgarg/Desktop/ros2_ws/src/mobile_robot2'
+[0.523s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.523s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_msgs -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_laserscan -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan
+[0.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/mobile_robot2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/mobile_robot2 -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2
+[2.571s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_laserscan -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan
+[2.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan -- -j12 -l12
+[3.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_msgs -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs
+[3.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs -- -j12 -l12
+[4.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/mobile_robot2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/mobile_robot2 -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2
+[4.165s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/mobile_robot2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/mobile_robot2 -- -j12 -l12
+[4.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/mobile_robot2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/mobile_robot2 -- -j12 -l12
+[4.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/mobile_robot2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/mobile_robot2
+[4.234s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mobile_robot2)
+[4.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/mobile_robot2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/mobile_robot2
+[4.238s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2' for CMake module files
+[4.239s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2' for CMake config files
+[4.239s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobile_robot2', 'cmake_prefix_path')
+[4.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/hook/cmake_prefix_path.ps1'
+[4.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/hook/cmake_prefix_path.dsv'
+[4.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/hook/cmake_prefix_path.sh'
+[4.242s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/bin'
+[4.242s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/lib/pkgconfig/mobile_robot2.pc'
+[4.242s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/lib/python3.10/site-packages'
+[4.243s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/bin'
+[4.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/package.ps1'
+[4.244s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/package.dsv'
+[4.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/package.sh'
+[4.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/package.bash'
+[4.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/package.zsh'
+[4.248s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/colcon-core/packages/mobile_robot2)
+[4.249s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mobile_robot2)
+[4.249s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2' for CMake module files
+[4.250s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2' for CMake config files
+[4.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobile_robot2', 'cmake_prefix_path')
+[4.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/hook/cmake_prefix_path.ps1'
+[4.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/hook/cmake_prefix_path.dsv'
+[4.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/hook/cmake_prefix_path.sh'
+[4.252s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/bin'
+[4.252s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/lib/pkgconfig/mobile_robot2.pc'
+[4.252s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/lib/python3.10/site-packages'
+[4.253s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/bin'
+[4.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/package.ps1'
+[4.254s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/package.dsv'
+[4.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/package.sh'
+[4.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/package.bash'
+[4.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/mobile_robot2/package.zsh'
+[4.256s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2/share/colcon-core/packages/mobile_robot2)
+[6.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs -- -j12 -l12
+[6.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs
+[6.610s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_msgs)
+[6.611s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs' for CMake module files
+[6.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/velodyne_msgs
+[6.612s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs' for CMake config files
+[6.612s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'cmake_prefix_path')
+[6.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.ps1'
+[6.613s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.dsv'
+[6.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.sh'
+[6.614s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib'
+[6.614s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'ld_library_path_lib')
+[6.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.ps1'
+[6.615s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.dsv'
+[6.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.sh'
+[6.616s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/bin'
+[6.616s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib/pkgconfig/velodyne_msgs.pc'
+[6.616s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib/python3.10/site-packages'
+[6.616s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/bin'
+[6.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/package.ps1'
+[6.618s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/package.dsv'
+[6.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/package.sh'
+[6.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/package.bash'
+[6.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/package.zsh'
+[6.619s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/colcon-core/packages/velodyne_msgs)
+[6.620s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_msgs)
+[6.620s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs' for CMake module files
+[6.621s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs' for CMake config files
+[6.621s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'cmake_prefix_path')
+[6.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.ps1'
+[6.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.dsv'
+[6.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/cmake_prefix_path.sh'
+[6.623s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib'
+[6.623s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_msgs', 'ld_library_path_lib')
+[6.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.ps1'
+[6.624s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.dsv'
+[6.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/hook/ld_library_path_lib.sh'
+[6.625s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/bin'
+[6.625s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib/pkgconfig/velodyne_msgs.pc'
+[6.625s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib/python3.10/site-packages'
+[6.625s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/bin'
+[6.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/package.ps1'
+[6.626s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/package.dsv'
+[6.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/package.sh'
+[6.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/package.bash'
+[6.628s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/velodyne_msgs/package.zsh'
+[6.628s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/share/colcon-core/packages/velodyne_msgs)
+[6.629s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_driver' with build type 'ament_cmake'
+[6.629s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_driver'
+[6.629s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.629s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.634s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_pointcloud' with build type 'ament_cmake'
+[6.634s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_pointcloud'
+[6.634s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.634s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_driver': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_driver -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver
+[6.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_pointcloud -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud
+[8.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_driver' returned '0': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_driver -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver
+[8.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_driver': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/velodyne_driver -- -j12 -l12
+[8.889s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud' returned '0': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne_pointcloud -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud
+[8.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud -- -j12 -l12
+[18.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan -- -j12 -l12
+[18.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan
+[18.550s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_laserscan)
+[18.551s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan' for CMake module files
+[18.551s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/velodyne_laserscan
+[18.553s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan' for CMake config files
+[18.553s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'cmake_prefix_path')
+[18.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.ps1'
+[18.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.dsv'
+[18.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.sh'
+[18.555s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib'
+[18.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'ld_library_path_lib')
+[18.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.ps1'
+[18.556s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.dsv'
+[18.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.sh'
+[18.556s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/bin'
+[18.556s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib/pkgconfig/velodyne_laserscan.pc'
+[18.557s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib/python3.10/site-packages'
+[18.557s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/bin'
+[18.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.ps1'
+[18.558s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv'
+[18.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.sh'
+[18.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.bash'
+[18.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.zsh'
+[18.560s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/colcon-core/packages/velodyne_laserscan)
+[18.561s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_laserscan)
+[18.561s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan' for CMake module files
+[18.562s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan' for CMake config files
+[18.562s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'cmake_prefix_path')
+[18.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.ps1'
+[18.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.dsv'
+[18.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/cmake_prefix_path.sh'
+[18.564s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib'
+[18.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_laserscan', 'ld_library_path_lib')
+[18.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.ps1'
+[18.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.dsv'
+[18.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/hook/ld_library_path_lib.sh'
+[18.566s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/bin'
+[18.566s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib/pkgconfig/velodyne_laserscan.pc'
+[18.566s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib/python3.10/site-packages'
+[18.566s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/bin'
+[18.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.ps1'
+[18.568s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.dsv'
+[18.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.sh'
+[18.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.bash'
+[18.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/velodyne_laserscan/package.zsh'
+[18.569s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/share/colcon-core/packages/velodyne_laserscan)
+[30.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_driver' returned '0': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/velodyne_driver -- -j12 -l12
+[30.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_driver': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/velodyne_driver
+[30.375s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_driver)
+[30.376s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver' for CMake module files
+[30.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_driver' returned '0': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/velodyne_driver
+[30.377s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver' for CMake config files
+[30.377s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'cmake_prefix_path')
+[30.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.ps1'
+[30.378s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.dsv'
+[30.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.sh'
+[30.379s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib'
+[30.379s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'ld_library_path_lib')
+[30.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.ps1'
+[30.380s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.dsv'
+[30.380s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.sh'
+[30.380s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/bin'
+[30.380s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib/pkgconfig/velodyne_driver.pc'
+[30.381s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib/python3.10/site-packages'
+[30.381s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/bin'
+[30.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.ps1'
+[30.382s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.dsv'
+[30.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.sh'
+[30.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.bash'
+[30.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.zsh'
+[30.384s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/colcon-core/packages/velodyne_driver)
+[30.384s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_driver)
+[30.385s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver' for CMake module files
+[30.385s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver' for CMake config files
+[30.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'cmake_prefix_path')
+[30.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.ps1'
+[30.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.dsv'
+[30.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/cmake_prefix_path.sh'
+[30.387s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib'
+[30.387s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_driver', 'ld_library_path_lib')
+[30.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.ps1'
+[30.388s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.dsv'
+[30.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/hook/ld_library_path_lib.sh'
+[30.389s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/bin'
+[30.389s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib/pkgconfig/velodyne_driver.pc'
+[30.389s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib/python3.10/site-packages'
+[30.390s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/bin'
+[30.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.ps1'
+[30.391s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.dsv'
+[30.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.sh'
+[30.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.bash'
+[30.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/velodyne_driver/package.zsh'
+[30.392s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/share/colcon-core/packages/velodyne_driver)
+[37.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud' returned '0': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud -- -j12 -l12
+[37.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud
+[37.843s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_pointcloud)
+[37.844s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud' for CMake module files
+[37.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud' returned '0': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble LD_LIBRARY_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan/lib:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/velodyne_pointcloud
+[37.846s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud' for CMake config files
+[37.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'cmake_prefix_path')
+[37.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.ps1'
+[37.847s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.dsv'
+[37.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.sh'
+[37.849s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib'
+[37.849s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'ld_library_path_lib')
+[37.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.ps1'
+[37.850s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.dsv'
+[37.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.sh'
+[37.851s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/bin'
+[37.851s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib/pkgconfig/velodyne_pointcloud.pc'
+[37.852s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib/python3.10/site-packages'
+[37.852s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/bin'
+[37.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.ps1'
+[37.854s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv'
+[37.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.sh'
+[37.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.bash'
+[37.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.zsh'
+[37.857s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/colcon-core/packages/velodyne_pointcloud)
+[37.858s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne_pointcloud)
+[37.858s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud' for CMake module files
+[37.860s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud' for CMake config files
+[37.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'cmake_prefix_path')
+[37.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.ps1'
+[37.862s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.dsv'
+[37.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/cmake_prefix_path.sh'
+[37.863s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib'
+[37.863s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne_pointcloud', 'ld_library_path_lib')
+[37.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.ps1'
+[37.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.dsv'
+[37.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/hook/ld_library_path_lib.sh'
+[37.866s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/bin'
+[37.867s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib/pkgconfig/velodyne_pointcloud.pc'
+[37.867s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/lib/python3.10/site-packages'
+[37.868s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/bin'
+[37.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.ps1'
+[37.870s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.dsv'
+[37.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.sh'
+[37.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.bash'
+[37.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/velodyne_pointcloud/package.zsh'
+[37.897s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud/share/colcon-core/packages/velodyne_pointcloud)
+[37.898s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne' with build type 'ament_cmake'
+[37.898s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne'
+[37.899s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[37.900s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[37.958s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/velodyne
+[40.505s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne' returned '0': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble /usr/bin/cmake /home/kushgarg/Desktop/ros2_ws/src/velodyne/velodyne -DCMAKE_INSTALL_PREFIX=/home/kushgarg/Desktop/ros2_ws/install/velodyne
+[40.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/velodyne -- -j12 -l12
+[40.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne' returned '0': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --build /home/kushgarg/Desktop/ros2_ws/build/velodyne -- -j12 -l12
+[40.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/velodyne
+[40.674s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne)
+[40.675s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne' for CMake module files
+[40.677s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kushgarg/Desktop/ros2_ws/build/velodyne' returned '0': CMAKE_PREFIX_PATH=/home/kushgarg/Desktop/ros2_ws/install/velodyne_pointcloud:/home/kushgarg/Desktop/ros2_ws/install/velodyne_driver:/home/kushgarg/Desktop/ros2_ws/install/velodyne_msgs:/home/kushgarg/Desktop/ros2_ws/install/velodyne_laserscan:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot2:/home/kushgarg/Desktop/ros2_ws/install/velodyne_simulator:/home/kushgarg/Desktop/ros2_ws/install/velodyne:/home/kushgarg/Desktop/ros2_ws/install/velodyne_gazebo_plugins:/home/kushgarg/Desktop/ros2_ws/install/mobile_robot:/home/kushgarg/Desktop/ros2_ws/install/velodyne_description:/opt/ros/humble /usr/bin/cmake --install /home/kushgarg/Desktop/ros2_ws/build/velodyne
+[40.679s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne' for CMake config files
+[40.680s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne', 'cmake_prefix_path')
+[40.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.ps1'
+[40.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.dsv'
+[40.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.sh'
+[40.685s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne/bin'
+[40.685s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne/lib/pkgconfig/velodyne.pc'
+[40.687s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne/lib/python3.10/site-packages'
+[40.688s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne/bin'
+[40.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/package.ps1'
+[40.691s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/package.dsv'
+[40.692s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/package.sh'
+[40.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/package.bash'
+[40.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/package.zsh'
+[40.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/colcon-core/packages/velodyne)
+[40.698s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velodyne)
+[40.699s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne' for CMake module files
+[40.701s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne' for CMake config files
+[40.702s] Level 1:colcon.colcon_core.shell:create_environment_hook('velodyne', 'cmake_prefix_path')
+[40.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.ps1'
+[40.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.dsv'
+[40.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/hook/cmake_prefix_path.sh'
+[40.708s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne/bin'
+[40.708s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne/lib/pkgconfig/velodyne.pc'
+[40.709s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne/lib/python3.10/site-packages'
+[40.710s] Level 1:colcon.colcon_core.environment:checking '/home/kushgarg/Desktop/ros2_ws/install/velodyne/bin'
+[40.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/package.ps1'
+[40.714s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/package.dsv'
+[40.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/package.sh'
+[40.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/package.bash'
+[40.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/velodyne/package.zsh'
+[40.720s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kushgarg/Desktop/ros2_ws/install/velodyne/share/colcon-core/packages/velodyne)
+[40.721s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[40.722s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[40.722s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[40.722s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[40.740s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[40.740s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[40.741s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[40.779s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[40.781s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kushgarg/Desktop/ros2_ws/install/local_setup.ps1'
+[40.785s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kushgarg/Desktop/ros2_ws/install/_local_setup_util_ps1.py'
+[40.793s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kushgarg/Desktop/ros2_ws/install/setup.ps1'
+[40.799s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kushgarg/Desktop/ros2_ws/install/local_setup.sh'
+[40.801s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kushgarg/Desktop/ros2_ws/install/_local_setup_util_sh.py'
+[40.804s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kushgarg/Desktop/ros2_ws/install/setup.sh'
+[40.809s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kushgarg/Desktop/ros2_ws/install/local_setup.bash'
+[40.811s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kushgarg/Desktop/ros2_ws/install/setup.bash'
+[40.816s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kushgarg/Desktop/ros2_ws/install/local_setup.zsh'
+[40.819s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kushgarg/Desktop/ros2_ws/install/setup.zsh'
